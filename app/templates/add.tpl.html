@@ -1,0 +1,31 @@
+ <div class="wholeBody">
+   <form ng-submit="add.addContact(cont)">
+
+      <label class="print">Name</label>
+      <p class="control">
+        <input class="input" type="text"
+          ng-model="cont.name"/>
+      </p>
+
+      <label class="print">Email</label>
+        <p class="control has-icon has-icon-right">
+          <input class="input" type="text"
+            ng-model="cont.email"/>
+        </p>
+
+      <label class="print">Phone</label>
+        <p class="control has-icon has-icon-right">
+          <input class="input" type="text"
+            ng-model="cont.phone"/>
+        </p>
+
+      <label class="print">Location</label>
+        <p class="control">
+          <input class="input"
+            ng-model="cont.location"/>
+        </p>
+
+      <button class="button is-primary">Submit</button>
+
+    </form>
+</div>
