@@ -7,11 +7,12 @@ function HomeController($state, ContactService) {
 	function init () {
     ContactService.allContacts().then((resp) => {
       vm.cont = resp.data;
+      console.log(vm.cont)
     });
   };
 
   init();
 };
 
-HomeController.$inject = ['ContactService'];
+HomeController.$inject = ['$state','ContactService'];
 export { HomeController };

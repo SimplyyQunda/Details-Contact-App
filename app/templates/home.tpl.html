@@ -1,18 +1,19 @@
-<div class="boxed">
-	<table>
+<div class="box">
+	<table class="table">
 		<thead>
 			<tr>
-				<th>My Squad</th>
+				<th class="squad">My Squad</th>
 			</tr>
 		</thead>
-		<tbody ng-repeat = 'contact in home.contacts'>
+		<tbody ng-repeat = 'contact in home.cont'>
 		<tr>
 			<td>
-				<a href = '#/details/{{cont._id}}'>
+				<a href = '#/details/{{contact._id}} '>
 				<img src='https://www.placecage.com/g/200/300'>
+				{{contact.name}} 
 				</a>
 			</td>
 		</tr>	
 		</tbody>
 	</table>
-</div>
+	</div>
